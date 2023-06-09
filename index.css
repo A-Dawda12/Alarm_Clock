@@ -1,0 +1,107 @@
+body {
+  background-image: url(assests/clock.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center bottom 60%;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80vh;
+}
+
+/* Main container of the alarm */
+.container {
+  background-color: #e2b364;
+  border-radius: 50% / 10%;
+  padding: 20px;
+  width: 40%;
+  height: fit-content;
+  margin: 0 auto; /* Add this line to center the container horizontally */
+  margin-top: 10%;
+  margin-left: 50%;
+  text-align: center;
+}
+
+/* Title style */
+.title {
+  background-color: #dcb97b;
+  padding: 10px;
+  font-size: 32px;
+  margin-bottom: 20px;
+  color: #333333;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  font-weight: bold;
+  letter-spacing: 2px;
+  transform: translateY(-10px); /* Move the title closer to the user */
+  box-shadow: 0px 10px 10px #605d07a6;
+  border-radius: 50%;
+}
+
+.realtime {
+  color: #333333;
+  font-weight: 800;
+}
+
+/* Style for elements with the time class */
+.time {
+  margin: 4px;
+  padding: 10px; /* Increase the overall size of the time element */
+}
+
+#setButton,
+#setClear {
+  padding: 12px 24px;
+  font-size: 18px;
+  background-color: #990000;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+#setButton:hover,
+#setClear:hover {
+  background-color: #4d0000;
+}
+
+.allalarms {
+  margin-top: 20px;
+  color: black;
+}
+
+/* Alarms which are added by users */
+
+#incomplete-alarms {
+  padding: 0;
+  margin-top: 16px;
+}
+
+#incomplete-alarms li {
+  margin-bottom: 8px;
+}
+
+#incomplete-alarms li:last-child {
+  margin-bottom: 0;
+}
+
+#incomplete-alarms li label {
+  color: #333333
+}
+
+button.delete {
+  background: #990000;
+  border: none;
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 0.4em 1em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+  margin: 0.5em;
+}
